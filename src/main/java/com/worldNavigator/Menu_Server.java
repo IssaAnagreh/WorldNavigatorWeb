@@ -30,7 +30,7 @@ public class Menu_Server extends HttpServlet {
         Menu menu = new Menu();
         menu.setMaps(maps, "0");
 
-        new Thread( () -> new Server(menu)).start();
+//        new Thread( () -> new Server(menu)).start();
 
         menu.start();
     }
